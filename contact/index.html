@@ -13,13 +13,11 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+
   <header>
     <p style="text-align: right;word-spacing: 18px;">Accueil
        Catalogue
@@ -29,23 +27,23 @@
   </header>
   <div>
     <div>
-  <form id="page_de_contact" action="/ma-page-de-Contact" method="post">
+  <form class="page_de_contact" action="/ma-page-de-Contact" method="post">
     <section>
       <div>
           <label for="name">Nom :</label>
-          <input type="text" id="name" name="user_name">
+          <input type="text" class="name" name="user_name">
       </div>
       <div>
           <label for="mail">e-mail :</label>
-          <input type="email" id="mail" name="user_mail">
+          <input type="email" class="mail" name="user_mail">
       </div>
       <div>
           <label for="tel">tel :</label>
-          <input type="tel" id="tel" name="tel">
+          <input type="tel" class="tel" name="tel">
       </div>
       <div>
           <label for="msg">Message :</label>
-          <textarea id="msg" name="user_message"></textarea>
+          <textarea class="msg" name="user_message"></textarea>
       </div>
       <div class="button">
         <button type="submit">Envoyer le message</button>
@@ -56,18 +54,18 @@
   <div class="search-bar">
 
     <div class="search-panel">
-      <div id="search-panel">
+      <div class="search-panel">
 
         <div class="city" style="display: block;">
                <p style="margin-left: 269px;"><strong>Obtenir les itinéraires routiers Lille</strong></p>
         </div>
-        <form id="directions" style="margin-top: 77px;">
+        <form class="directions" style="margin-top: 77px;">
           <img class="pinB" src="img/pinB.jpg" style="width: 26px;height: 29px;margin-top: 23px;margin-left: 31px;display: inline;"/>
-          <input id="destination" placeholder="Entrez l'emplacement" autocomplete="off" type="text" style="vertical-align: bottom;"><br>
+          <input class="destination" placeholder="Entrez l'emplacement" autocomplete="off" type="text" style="vertical-align: bottom;"><br>
 
           <img class="pinA" src="img/pinA.jpg" style="width: 41px;height: 47px;margin-top: 5px;margin-left: 15px; vertical-align: bottom;"/>
 
-           <input id="location" placeholder="Entrez l'emplacement" autocomplete="off" type="text" style="vertical-align: bottom;"><br>
+           <input class="location" placeholder="Entrez l'emplacement" autocomplete="off" type="text" style="vertical-align: bottom;"><br>
 
          <div class="form-group"><br>
 
@@ -78,7 +76,7 @@
              </i>
            </button><br>
          </div>
-         <div id="switch"></div><br>
+         <div class="switch"></div><br>
        </form>
      </div>
    </div>
@@ -98,9 +96,8 @@
    <ul style="">
 
       <strong><em>#SUIVEZ-NOUS</em></strong><br>
-        <img id="facebook" src="img/facebook.png" style="width: 67px;vertical-align: middle;"/>
-        <img id="twitter" src="img/twitter.png" style="width: 46px;vertical-align: middle;"/>
-        <img id="instagram" src="img/instagram.jpeg" style="width: 68px;vertical-align: middle;"/>
+        <img class="facebook" src="img/facebook.png" style="width: 67px;vertical-align: middle;"/>
+        <img class="twitter" src="img/twitter.png" style="width: 46px;vertical-align: middle;"/>
 
    </section>
 
@@ -112,13 +109,14 @@
 
       <p class="Coordonnée"><strong><em>#Coordonnée du salon tatoo</em></strong></p>
       <p><img src="img/gps.png" style="width: 43px;vertical-align: middle;"/>2,boulevard Thomson CS 60500 59815 Lesquin Cedex<br>
-          <img src="img/tel.jpg" style="width: 26px;vertical-align: middle;"/>  01 01 01 01 01 <br>
           <img src="img/@.jpg" style="width: 27px;vertical-align: middle;"/>  yesweweb@salon_tatoo.
+          <img src="img/tel.jpg" style="width: 26px;vertical-align: middle;"/>  01 01 01 01 01 <br>
       </p>
      </section>
    </ul>
   </footer>
 
+  <img class="instagram" src="img/instagram.jpeg" style="width: 68px;vertical-align: middle;"/>
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -127,7 +125,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
